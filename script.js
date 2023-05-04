@@ -23,8 +23,22 @@ var uppercaseConfirm = confirm("Would you like uppercase?")
 var lowercaseConfirm = confirm("Would you like lowercase?")
 var numbersConfirm = confirm("Would you like any numbers?")
 var specialCharactersConfirm = confirm("Would you like and special characters?")
+//Added empty string for my "confirm" to return to
+var charset = "";
 
+if (uppercaseConfirm === true){
+  charset += uppercase;
 }
+if (lowercaseConfirm ===true){
+  charset += lowercase;
+}
+if (numbersConfirm === true){
+  charset += numbers;
+}
+if (specialCharactersConfirm === true){
+  charset += specialCharacters;
+}
+
 
 // Write password to the #password input
 function writePassword() {
