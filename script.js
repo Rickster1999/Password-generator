@@ -25,7 +25,7 @@ var numbersConfirm = confirm("Would you like any numbers?")
 var specialCharactersConfirm = confirm("Would you like and special characters?")
 //Added empty string for my "confirm" to return to
 var charset = "";
-
+//Added strictly equal to imputs for the empty string
 if (uppercaseConfirm === true){
   charset += uppercase;
 }
@@ -37,6 +37,17 @@ if (numbersConfirm === true){
 }
 if (specialCharactersConfirm === true){
   charset += specialCharacters;
+}
+//Added the for loop for my random password generation and had it imput into the empty string "returnPassword"
+var returnPassword = "";
+
+for (var i=0;i<passwordLength;i++){
+  var random = charset.charAt (Math.floor(Math.random()* charset.length));
+  returnPassword += random;
+}
+
+return returnPassword;
+
 }
 
 
