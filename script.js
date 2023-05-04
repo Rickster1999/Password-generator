@@ -1,11 +1,29 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-// Added confirm function
-function generatePassword(){
-  let uppercase = confirm("Would you like uppercase?")
-  let lowercase = confirm("Would you like lowercase?")
-  let numbers = confirm("Would you like any numbers?")
-  let specialCharacters = confirm("Would you like and special characters?")
+
+// Added variables
+function generatePassword() {
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var lowercase = "abcdefghijklmnopqrstuvwxyz"
+var numbers = "0123456789"
+var specialCharacters = "!@#$%^&*()?."
+//Added prompt for that pops up immediately when loading the site
+var passwordLength = prompt("How many charcters would you like?")
+
+
+// Added he character limit to the password
+if (passwordLength < 8 || passwordLength > 128) {
+  alert("please choose between 8 - 128 characters")
+  generatePassword()
+}
+
+// Added confirm and prompts
+
+var uppercaseConfirm = confirm("Would you like uppercase?")
+var lowercaseConfirm = confirm("Would you like lowercase?")
+var numbersConfirm = confirm("Would you like any numbers?")
+var specialCharactersConfirm = confirm("Would you like and special characters?")
+
 }
 
 // Write password to the #password input
