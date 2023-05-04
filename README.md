@@ -10,6 +10,6 @@ N/A
 ## Usage
 Link to deployed project: [click here!](https://rickster1999.github.io/Password-generator/)
 ---
-![Password Generator Screenshot](./assets/images/genscreenshot.png)
+![Password Generator Screenshot](genscreenshot.png)
 - Click on the 'Generate Password' button then follow the prompts and confirms. You'll be asked to input a number between 8 and 128 and if you would like to include or exclude lowercase letters, uppercase letters, numbers, and special characters.
 - After everything has been inputted you will then be presented with your new randomized password.
